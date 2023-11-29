@@ -1,0 +1,103 @@
+<ion-content [fullscreen]="true">
+
+  <div class="visor1">
+
+    <div class="visor">
+      <h3>{{memoria}}</h3>
+      <h1>{{resultado}}</h1>
+    </div>
+
+  </div>
+
+  <div class="num">
+    <ion-row>
+    
+      <ion-col>
+        <ion-button class="operadores" size="large" color="secondary" (click)="operadores('%')">%</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="operadores" size="large" color="secondary" (click)="operadores('√')">√</ion-button>
+      </ion-col>
+
+      <ion-col size = "6">
+        <ion-button class="operadores del" size="large" color="secondary" (click)="resetar()">DEL</ion-button>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button class="operadores" size="large" color="secondary" (click)="operadores('²')">x²</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="operadores" size="large" color="secondary" (click)="operadores('³')">x³</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="operadores" size="large" color="secondary" (click)="operadores('^')">y^</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="operadores" size="large" color="secondary" (click)="operadores('/')">/</ion-button>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <ion-button class="botao" size="large"  (click)="digitos('7')">7</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="botao" size="large" (click)="digitos('8')">8</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="botao" size="large" (click)="digitos('9')">9</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="operadores" size="large" color="secondary" (click)="operadores('+')">+</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button class="botao" size="large" (click)="digitos('4')">4</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="botao" size="large" (click)="digitos('5')">5</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="botao" size="large" (click)="digitos('6')">6</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="operadores" size="large" color="secondary" (click)="operadores('-')">-</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button class="botao" size="large" (click)="digitos('1')">1</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="botao" size="large" (click)="digitos('2')">2</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="botao" size="large" (click)="digitos('3')">3</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="operadores" size="large" color="secondary" (click)="operadores('*')">*</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-button class="botao zero" size="large" (click)="digitos('0')">0</ion-button>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-button class="operadores botao-igual" color="danger" size="large" (click)="calcular()">=</ion-button>
+      </ion-col>
+
+
+
+    </ion-row>
+
+  </div>
+</ion-content>
